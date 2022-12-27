@@ -1,0 +1,230 @@
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 64, 0.804359243697479) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.app {
+  /*padding: 20px;*/
+  display: flex;
+  min-height: 100vh;
+  min-width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+}
+
+.header>a {
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+}
+
+.header__logo {
+  width: 90%;
+  height: 100px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.mainmenu__list {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  /*border: 1px gray solid;
+  display: flex;*/
+  width: 280px;
+}
+
+.mainmenu__list_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.mainmenu li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.mainmenu__link {
+  display: block;
+  color: #000;
+  text-decoration: none;
+
+
+  text-align: center;
+}
+
+.mainmenu__link:hover {
+  text-decoration: none;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.6);
+}
+
+.mainmenu__link.active {
+  /*text-decoration: none;
+  background-color: #000;
+  color: #fff;*/
+}
+
+.content {
+  flex-grow: 1;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.iframe_center {
+  width: 50%;
+  min-width: 280px;
+  height: 380px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: right;
+}
+
+.display-none {
+  display: none;
+}
+
+/*------ Xonix styles end--------------------------------*/
+.canvas_center {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.canvas__countdown {
+  position: absolute;
+  z-index: 100;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+}
+
+/* ----- modal user name-------------------*/
+.modal {
+  display: block;
+  width: 350px;
+  max-width: 100%;
+  /*height: 400px;
+  max-height: 100%;*/
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(232, 215, 78, 0.938813025210084) 35%, rgba(0, 212, 255, 1) 100%);
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.modal_height-auto {
+  height: auto;
+  /*min-height: 450px;*/
+}
+
+.modal_closed {
+  display: none;
+}
+
+.modal__header {
+  border-bottom: 1px gray solid;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+
+.modal__content {
+  padding: 10px 15px;
+  min-height: 100px;
+}
+
+.form-field {
+  padding: 0 0 10px;
+}
+
+.form-field input {
+  border: 1px gray solid;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 10px;
+  font-size: 14px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.form-field .input__default {
+  width: 280px;
+  background: rgb(245, 238, 185);
+  background: linear-gradient(90deg, rgba(245, 238, 185, 0.938813025210084) 35%, rgba(97, 171, 186, 1) 100%);
+  border: #000 1 solid;
+}
+
+.modal__footer {
+  border-top: 1px gray solid;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.modal__footer .modal__save {
+  background: rgb(245, 238, 185);
+  background: linear-gradient(90deg, rgba(245, 238, 185, 0.938813025210084) 34%, rgba(238, 225, 22, 1) 100%);
+  border-color: #28a745;
+  color: black;
+}
+
+.modal__footer .modal__save:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.modal__footer .modal__save:active {
+  background-color: #1e7e34;
+  border-color: #1c7430;
+}
+
+.modal__footer .modal__save:disabled {
+  opacity: 0.7;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/*------------------modal user name--------------*/
+
+/*начало стили для свг прогресса получения данных*/
+.modal__svg-progress {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 40px);
+}
+
+/*окончание стили для свг прогресса получения данных*/
+
+@media only screen and (max-width : 625px) {
+  .mainmenu__list_flex {
+    display: block;
+  }
+}
